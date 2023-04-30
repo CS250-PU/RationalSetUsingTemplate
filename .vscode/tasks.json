@@ -4,7 +4,7 @@
 		{
 			"label": "printToPDF",
 			"type": "shell",
-			"command": "enscript -C -T 2 -p - -M Letter -Ecpp --color -fCourier8 Rational/src/*.cpp Rational/include/*.h | ps2pdf - Rational/bin/src.pdf",
+			"command": "enscript -C -T 2 -p - -M Letter -Ecpp --color -fCourier8 src/*.cpp include/*.h | ps2pdf - pdfs/src.pdf",
 			"group": {
 					"kind": "none"
 			},
