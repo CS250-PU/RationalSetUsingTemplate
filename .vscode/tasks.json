@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "printToPDF",
+			"type": "shell",
+			"command": "enscript -C -T 2 -p - -M Letter -Ecpp --color -fCourier8 Rational/src/*.cpp Rational/include/*.h | ps2pdf - Rational/bin/src.pdf",
+			"group": {
+					"kind": "none"
+			},
+			"problemMatcher": []
+		},
+		{
+      "label": "build",
+      "type": "shell",
+      "command": "make"
+    }
+	]
+}
